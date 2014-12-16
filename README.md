@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/sudweb/2015.png?label=ready&title=Ready)](https://waffle.io/sudweb/2015)
 # Sud Web 2014 website [![Build Status](https://travis-ci.org/sudweb/2014.png?branch=master)](https://travis-ci.org/sudweb/2014)
 
 
