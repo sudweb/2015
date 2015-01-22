@@ -306,7 +306,6 @@ a:visited {
     top: -1.8em;
 
     @include backfold(darken($secondary, 20%), .6em, left);
-    @include ribbon($secondary, 18px, right);
   }
 }
 
@@ -477,16 +476,11 @@ h1,
     min-height: 36px;
     white-space: nowrap;
 
-    @include respond-to(narrow) {
-      @include ribbon($primary, 18px);
-    }
-    @include respond-to(medium-and-up) {
-      padding-left: 3em;
-    }
   }
 
   .orateur {
-    h3, h4 {
+    h3,
+    h4 {
       text-align: center;
     }
 
@@ -560,14 +554,7 @@ h1,
     .callout {
       margin-left: 2%;
     }
-    .conferences h3,
-    .soirees h3 {
-      @include ribbon($primary, 18px, left);
-    }
-    .ateliers h3,
-    .callout h3 {
-      @include ribbon($primary, 18px, right);
-    }
+
   }
   @include respond-to(wide) {
     .conferences,
@@ -587,12 +574,7 @@ h1,
         margin-right: 0;
       }
     }
-    .conferences h3 {
-      @include ribbon($primary, 18px, left);
-      margin-right: 0;
-    }
     .soirees h3 {
-      @include ribbon($primary, 18px, right);
       margin-left: 0;
     }
   }
@@ -740,7 +722,6 @@ aside.ateliers:before {
     text-align: right;
     vertical-align: middle;
     @include font-size(26);
-    @include ribbon($inverted, 16px, left);
 
     &.long-name {
       @include font-size(22);
@@ -869,7 +850,6 @@ aside.ateliers:before {
       background: $inverted;
       margin-bottom: 0;
       padding-right: .5em;
-      @include ribbon($inverted, 11px, left);
     }
   }
   .session__photo {
