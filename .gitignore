@@ -56,6 +56,10 @@ coverage
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
+# Styles
+.sass-cache
+css
+
 # node-waf configuration
 .lock-wscript
 
