@@ -1,6 +1,6 @@
 /* SUDWEB 2014 TEAM */
 
-	Loïc Mathaud (@bballizlife)
+	Loïc Mathaud (@loicmathaud)
 	from Saint-Étienne, France
 
 	Thomas Parisot (@oncletom)
