@@ -41,7 +41,7 @@ module.exports = function (grunt) {
       'production': {
         src: '<%= deployableFiles %>',
         options: {
-          repo: 'git@github.com:sudweb/2014.git'
+          repo: 'git@github.com:sudweb/2015.git'
         }
       },
       'dev': {
