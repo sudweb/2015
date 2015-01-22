@@ -1,0 +1,10 @@
+@import "../variables";
+
+.list-inline {
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline;
+  }
+}

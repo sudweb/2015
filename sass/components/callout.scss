@@ -1,0 +1,65 @@
+
+.callout {
+  background: $inverted;
+  color: $text-over-inverted;
+  padding: 1.75em 1em 1em;
+
+  h2 {
+    background: $secondary;
+    color: $text-over-secondary;
+    display: inline-block;
+    position: absolute;
+    padding: .5rem 1em;
+    z-index: 1;
+    left: -1.4em;
+    top: -1.8em;
+
+    @include backfold(darken($secondary, 20%), .6em, left);
+  }
+}
+
+.callout, .callout-discrete {
+  clear: both;
+  margin: 4em 0 2em;
+  max-width: $widest;
+  position: relative;
+
+  h2 {
+    font-weight: normal;
+    margin: 1em;
+    min-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .more {
+    padding-top: .5em;
+    border-top: 1px solid darken($text-over-inverted, 50%);
+  }
+
+  @include respond-to(medium-and-up) {
+    .excerpt {
+      display: inline-block;
+      vertical-align: top;
+      width: 52%;
+    }
+    .more {
+      border-left: 3px solid darken($text-over-inverted, 50%);
+      display: inline-block;
+      width: 45%;
+      padding-left: 1em;
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+}
+
+.callout-discrete {
+  @include respond-to(medium-and-up) {
+    .excerpt {
+      width: 60%;
+    }
+    .more {
+      width: 35%;
+    }
+  }
+}

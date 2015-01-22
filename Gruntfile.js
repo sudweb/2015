@@ -30,10 +30,13 @@ module.exports = function (grunt) {
         src: ['*.html']
       }
     },
-    compass: {
+    sass: {
       dist: {
+        files: {
+          'css/sudweb.css': 'sass/sudweb.scss'
+        },
         options: {
-          config: 'config.rb'
+          sourceMap: true
         }
       }
     },
@@ -55,14 +58,14 @@ module.exports = function (grunt) {
       },
       css: {
         files: ['sass/**/*.scss'],
-        tasks: ['compass:dist']
+        tasks: ['sass:dist']
       }
     }
   });
 
-  grunt.registerTask('default', ['htmlhint', 'compass', 'watch']);
+  grunt.registerTask('default', ['htmlhint', 'sass', 'watch']);
 
   grunt.registerTask('deploy', ['deploy-prod']);
-  grunt.registerTask('deploy-dev', ['compass', 'gh-pages:dev']);
-  grunt.registerTask('deploy-prod', ['compass', 'gh-pages:production']);
+  grunt.registerTask('deploy-dev', ['sass', 'gh-pages:dev']);
+  grunt.registerTask('deploy-prod', ['sass', 'gh-pages:production']);
 };

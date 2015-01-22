@@ -1,0 +1,113 @@
+.logo {
+  display: block;
+  width: 120px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 1.2em;
+  z-index: 1;
+  @include respond-to(wide) {
+    width: auto;
+    top: .5em;
+  }
+}
+
+.pageheader {
+  background: $inverted;
+  color: $text-over-inverted;
+  margin-bottom: 4em;
+  text-align: right;
+
+  &.with-hero {
+    margin-bottom: 0;
+  }
+
+  .container {
+    padding-left: 100px;
+    @include respond-to(wide) {
+      padding-left: 200px;
+    }
+  }
+  .nav {
+    text-align: left;
+    @include respond-to(medium) {
+      position: absolute;
+      top: -17em;
+      left: 0;
+      right: 0;
+      z-index: 1;
+
+      &:target {
+        @include vendorize(transition, top .3s ease-out);
+        top: 0;
+      }
+    }
+    @include respond-to(wide) {
+      text-align: right;
+      padding: .5em 0;
+      .close {
+        display: none;
+      }
+    }
+    a,
+    span{
+      border: 1px solid transparent;
+      text-transform: uppercase;
+      color: $text-over-inverted;
+      background: $inverted;
+      @include respond-to(wide) {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+    a:focus,
+    a:hover,
+    .current,
+    .cta{
+      background: $contrast;
+      border: 1px solid $contrast;
+      border-radius: 2px;
+      color: $text-over-contrast;
+      text-decoration: none;
+
+      transition: background .3s ease, color .3s ease;
+
+      &:hover,
+      &:focus {
+        background: $body;
+        color: darken($contrast, 0.15);
+      }
+    }
+    span {
+      border-right: none;
+    }
+    li:last-child a {
+      @include respond-to(wide) {
+        border: none;
+      }
+    }
+  }
+  .banner {
+    border-top: 2px solid $inverted;
+    text-align: center;
+    background: $primary;
+    color: $text-over-primary;
+    padding: 1em;
+  }
+  .baseline {
+    @include respond-to(wide) {
+      @include font-size(25);
+    }
+  }
+  .description {
+    text-transform: uppercase;
+    display: inline;
+  }
+  @include respond-to(wide) {
+    .date {
+      display: inline;
+      text-transform: uppercase;
+      padding-left: .25em;
+    }
+  }
+}

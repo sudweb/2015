@@ -1,0 +1,27 @@
+.hero {
+  $imgUrl: '../img/cover-780.jpg';
+  background: $inverted url($imgUrl) no-repeat center top;
+  background-size: auto, cover;
+  background-position: center top, center center;
+  margin: 0;
+  min-height: 320px;
+  padding: 11em 1em 1em;
+  position: relative;
+
+  a {
+    color: $text;
+    text-decoration: underline;
+  }
+
+  @include respond-to(wide) {
+    $imgUrl: '../img/cover.jpg';
+
+    background-image: url($imgUrl) no-repeat center top;
+    background-position: left center;
+    background-size:100%;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: auto;
+    padding: 2em 1em 2em 65%;
+  }
+}

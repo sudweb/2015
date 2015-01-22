@@ -1,0 +1,25 @@
+.form {
+  .row {
+    margin-bottom: 1.5em;
+  }
+
+  label,
+  .help {
+    display: block;
+  }
+
+  .inline {
+    .help {
+      display: inline;
+    }
+  }
+
+  select,
+  textarea,
+  input[type="email"],
+  input[type="text"] {
+    border: 1px solid fade-out($inverted, 0.3);
+    padding: .3em;
+    width: 50%;
+  }
+}
