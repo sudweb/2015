@@ -1,6 +1,6 @@
 /* SUDWEB 2014 TEAM */
 
-	Loïc Mathaud (@bballizlife)
+	Loïc Mathaud (@loicmathaud)
 	from Saint-Étienne, France
 
 	Thomas Parisot (@oncletom)
@@ -22,6 +22,6 @@
 
 /* SITE */
 
-	Last update:2013/12/15
+	Last update:2015/01/22
 	Web Standards: HTML5, CSS3, Javascript
 	Tools: Git, Node, npm, Grunt, Sass, Compass
