@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  @include font-size(16);
+  @include font-size(20);
 }
 
 h1, h2, h3, p, ul, ol, li {
@@ -24,20 +24,20 @@ h1, h2, h3, p, ul, ol, li {
 }
 
 h1 {
-  @include font-size(22);
+  @include font-size(24);
   margin: 0 0 .5em;
 }
 
 h2 {
-  @include font-size(20);
+  @include font-size(22);
 }
 
 h3 {
-  @include font-size(18);
+  @include font-size(20);
 }
 
 blockquote {
-  @include font-size(18);
+  @include font-size(20);
   font-style: italic;
   margin: 1em 4em;
   &:before {
@@ -233,7 +233,7 @@ a:visited {
     text-align: center;
     background: $primary;
     color: $text-over-primary;
-    padding: .5em 1em;
+    padding: 1em;
   }
   .baseline {
     @include respond-to(wide) {
@@ -375,7 +375,7 @@ h1,
   color: $primary;
   text-align: center;
   text-transform: uppercase;
-  @include font-size(24);
+  @include font-size(26);
 }
 
 /* Titre avec traits gauche et droite */
@@ -437,6 +437,7 @@ h1,
   #salles {
     margin-top: 2em;
     padding: .5em 1em;
+
     a {
       text-decoration: underline;
     }
@@ -451,6 +452,10 @@ h1,
   }
 }
 .accueil {
+  #salles {
+    text-align: center;
+  }
+
   .conferences:before,
   .ateliers:before,
   .soirees:before,
@@ -471,11 +476,10 @@ h1,
     background: $primary;
     color: $text-over-primary;
     position: relative;
-    margin: 1em;
+    margin: 1em 0;
     padding: .5rem 0 .45rem;
     min-height: 36px;
     white-space: nowrap;
-
   }
 
   .orateur {
