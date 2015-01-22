@@ -1,6 +1,6 @@
 [![Stories in Ready](https://badge.waffle.io/sudweb/2015.png?label=ready&title=Ready)](https://waffle.io/sudweb/2015)
 
-# Sud Web 2015 website 
+# Sud Web 2015 website
 
 [![Build Status](https://travis-ci.org/sudweb/2015.png?branch=master)](https://travis-ci.org/sudweb/2015)
 
@@ -16,7 +16,7 @@ This project uses Sass, Compass, node and Grunt because we are cool kids.
 
 You shoud be able to install Compass and node in a few commands:
 
-* `gem install compass`
+* `gem install bundle && bundle install`
 * `brew install node` on Mac OS X for instance
 
 ## Install
