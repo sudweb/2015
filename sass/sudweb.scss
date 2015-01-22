@@ -15,7 +15,7 @@ html {
   font-family: arial, sans-serif;
 }
 
-body {
+body, button {
   @include font-size(20);
 }
 
@@ -115,6 +115,8 @@ section,
 //*********************  SKIN  *************/
 html {
   background: #fff url(../img/bg.png) repeat center top;
+}
+html, button {
   color: $text;
   font-family: Ruluko, arial, sans-serif;
 }
