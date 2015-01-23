@@ -1,3 +1,5 @@
+$avatar-width: 150px;
+
 .orateur {
   &:hover {
     opacity: 0.9;
@@ -15,5 +17,38 @@
 
   .notice {
     font-style: italic;
+  }
+}
+
+.speaker-bio {
+
+  &__name {
+
+  }
+
+  &__biography {
+
+  }
+}
+
+.speaker-avatar {
+  text-align: center;
+
+  &__image,
+  &__name,
+  &__title{
+    display: block;
+  }
+
+  &__image {
+    margin: 0 auto 0.5em;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__title {
+    font-size: .9em;
   }
 }

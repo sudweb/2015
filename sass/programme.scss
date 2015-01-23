@@ -1,0 +1,51 @@
+@import "mixins/flexbox";
+
+.schedule-list {
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+.schedule-slot {
+  @include flexbox;
+  @include flex-flow(wrap row);
+  @include align-items(stretch);
+
+  header {
+    font-size: 0;
+    @include flex(0 1 100%);
+    margin-bottom: 1em;
+  }
+
+  &__time,
+  &__title {
+    background-color: $primary;
+    border: 1px solid $primary;
+    color: $text-over-primary;
+    display: inline-block;
+    @include font-size(20);
+    padding: 1em;
+  }
+
+  &__time {
+    background: $text-over-primary;
+    border: 1px solid $primary;
+    color: $primary;
+  }
+
+  &__title {
+
+  }
+
+  &__description {
+    @include flex(1 0 75%);
+    padding-top: .5em;
+  }
+
+  &__speaker {
+    @include flex(1 0 25%);
+    @include order(1);
+    margin-top: -3em;
+  }
+}
+
+
