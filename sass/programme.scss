@@ -10,6 +10,12 @@
   @include flex-flow(wrap row);
   @include align-items(stretch);
 
+  margin: 1.5em;
+
+  &.schedule-slot--break {
+    background-color: $light-gray;
+  }
+
   header {
     font-size: 0;
     @include flex(0 1 100%);
