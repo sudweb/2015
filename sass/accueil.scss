@@ -54,37 +54,11 @@
     }
   }
   @include respond-to(medium-only) {
-    .conferences,
-    .ateliers {
-      display: inline-block;
-      vertical-align: top;
-      width: 49%;
-      @include clearfix;
-    }
-    #salles{
-      width: 100%;
-    }
   }
+
   @include respond-to(wide) {
-    .conferences,
-    .ateliers,
-    .soirees {
-      display: inline-block;
-      vertical-align: top;
-      width: 31%;
-    }
     .column.orateur {
       width: 24%;
-    }
-    .ateliers {
-      margin: 0 2%;
-      h3 {
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
-    .soirees h3 {
-      margin-left: 0;
     }
   }
 }

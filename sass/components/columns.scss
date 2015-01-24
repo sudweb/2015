@@ -1,0 +1,30 @@
+//
+// Container of columned contents
+//
+@import "../mixins/flexbox";
+
+.columned-content {
+  @include flexbox;
+
+  @include respond-to(medium-only){
+    @include flex-flow(wrap row);
+
+    > article {
+      @include flex(0 1 49%);
+      margin: 0 auto;
+    }
+  }
+
+  @include respond-to(wide){
+    @include flex-flow(nowrap row);
+
+    > article{
+      margin-left: 1.5em;
+      @include flex(1);
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
