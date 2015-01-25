@@ -614,11 +614,6 @@ aside.ateliers:before {
   text-align: right; }
   .pageheader.with-hero {
     margin-bottom: 0; }
-  .pageheader .container {
-    padding-left: 100px; }
-    @media only screen and (min-width: 45em) {
-      .pageheader .container {
-        padding-left: 200px; } }
   .pageheader .nav {
     text-align: left; }
     @media only screen and (max-width: 45em) {
@@ -671,6 +666,9 @@ aside.ateliers:before {
     background: #f64b3a;
     color: #fef8f7;
     padding: 1em; }
+    @media only screen and (max-width: 32em) {
+      .pageheader .banner {
+        padding-left: 6em; } }
   @media only screen and (min-width: 45em) {
     .pageheader .baseline {
       font-size: 25px;
