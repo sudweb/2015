@@ -22,12 +22,6 @@
     margin-bottom: 0;
   }
 
-  .container {
-    padding-left: 100px;
-    @include respond-to(wide) {
-      padding-left: 200px;
-    }
-  }
   .nav {
     text-align: left;
     @include respond-to(medium) {
@@ -93,6 +87,9 @@
     background: $primary;
     color: $text-over-primary;
     padding: 1em;
+    @include respond-to(narrow) {
+      padding-left: 6em;
+    }
   }
   .baseline {
     @include respond-to(wide) {
