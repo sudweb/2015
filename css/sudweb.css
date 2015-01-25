@@ -341,10 +341,48 @@ td, th {
 
 .list-inline {
   list-style: none;
+  line-height: 2.5;
   margin: 1.5em 0;
   text-align: center; }
   .list-inline li {
     display: inline; }
+
+.columned-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  @media only screen and (min-width: 32em) and (max-width: 45em) {
+    .columned-content {
+      -webkit-flex-flow: wrap row;
+      -moz-flex-flow: wrap row;
+      -ms-flex-flow: wrap row;
+      flex-flow: wrap row; }
+      .columned-content > article {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 49%;
+        -moz-box-flex: 0;
+        -moz-flex: 0 1 49%;
+        -ms-flex: 0 1 49%;
+        flex: 0 1 49%;
+        margin: 0 auto; } }
+  @media only screen and (min-width: 45em) {
+    .columned-content {
+      -webkit-flex-flow: nowrap row;
+      -moz-flex-flow: nowrap row;
+      -ms-flex-flow: nowrap row;
+      flex-flow: nowrap row; }
+      .columned-content > article {
+        margin-left: 1.5em;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+        .columned-content > article:first-of-type {
+          margin-left: 0; } }
 
 * {
   -webkit-box-sizing: border-box;
@@ -420,6 +458,10 @@ section, .container {
   position: relative;
   max-width: 60em;
   margin: 0 auto; }
+  @media only screen and (max-width: 32em) {
+    section, .container {
+      margin-left: 1em;
+      margin-right: 1em; } }
 
 .skiplink {
   display: inline-block; }
@@ -745,36 +787,9 @@ aside.ateliers:before {
   .accueil .column.orateur {
     width: 49%; }
  }
-@media only screen and (min-width: 32em) and (max-width: 45em) {
-  .accueil .conferences, .accueil .ateliers {
-    display: inline-block;
-    vertical-align: top;
-    width: 49%; }
-    .accueil .conferences:after, .accueil .ateliers:after {
-      content: "";
-      display: table;
-      clear: both; }
-
-  .accueil #salles {
-    width: 100%; }
- }
 @media only screen and (min-width: 45em) {
-  .accueil .conferences, .accueil .ateliers, .accueil .soirees {
-    display: inline-block;
-    vertical-align: top;
-    width: 31%; }
-
   .accueil .column.orateur {
     width: 24%; }
-
-  .accueil .ateliers {
-    margin: 0 2%; }
-    .accueil .ateliers h3 {
-      margin-left: 0;
-      margin-right: 0; }
-
-  .accueil .soirees h3 {
-    margin-left: 0; }
  }
 
 .orateur:hover {
@@ -783,8 +798,9 @@ aside.ateliers:before {
 .orateur .avatar {
   text-align: center; }
   .orateur .avatar img {
-    border-radius: 4px;
-    box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.3);
     max-width: 150px; }
 .orateur .notice {
   font-style: italic; }
