@@ -1,8 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/sudweb/2015.png?label=ready&title=Ready)](https://waffle.io/sudweb/2015)
-
-# Sud Web 2015 website
-
-[![Build Status](https://travis-ci.org/sudweb/2015.png?branch=master)](https://travis-ci.org/sudweb/2015)
+# sudweb.fr/2015 [![Stories in Ready](https://badge.waffle.io/sudweb/2015.png?label=ready&title=Ready)](https://waffle.io/sudweb/2015) [![Build Status](https://travis-ci.org/sudweb/2015.png?branch=master)](https://travis-ci.org/sudweb/2015)
 
 Just some good old static webpages. We like to KISS.
 
