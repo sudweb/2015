@@ -459,14 +459,14 @@ h3 {
 blockquote {
   font-size: 20px;
   font-size: 2rem;
-  font-style: italic;
   margin: 1em 4em; }
   blockquote:before {
+    color: #aaa;
     display: block;
     height: 0;
     content: "“";
-    margin-left: -0.95em;
-    font: italic 400%/1 Cochin, Georgia, "Times New Roman", serif; }
+    margin-left: -0.6em;
+    font: 400%/1 Cochin, Georgia, "Times New Roman", serif; }
 
 p {
   margin-bottom: 0.5em; }
@@ -821,6 +821,7 @@ aside.ateliers:before {
     vertical-align: top; }
 
   .accueil .column.orateur {
+    text-align: center;
     width: 49%; }
  }
 @media only screen and (min-width: 45em) {
