@@ -789,7 +789,7 @@ aside.ateliers:before {
 
 .accueil #salles {
   text-align: center; }
-.accueil .conferences h3, .accueil .ateliers h3, .accueil .soirees h3 {
+.accueil .columned-content h3 {
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
