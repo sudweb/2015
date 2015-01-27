@@ -3,9 +3,7 @@
     text-align: center;
   }
 
-  .conferences h3,
-  .ateliers h3,
-  .soirees h3 {
+  .columned-content h3 {
     text-align: center;
     text-transform: uppercase;
     @include font-size(20);
