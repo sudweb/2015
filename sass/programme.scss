@@ -20,37 +20,54 @@
     font-size: 0;
     @include flex(0 1 100%);
     margin-bottom: 1em;
-  }
 
-  &__time,
-  &__title {
-    background-color: $primary;
-    border: 1px solid $primary;
-    color: $text-over-primary;
-    display: inline-block;
-    @include font-size(20);
-    padding: 1em;
-  }
+    .schedule-slot__time,
+    .schedule-slot__title {
+      background-color: $primary;
+      border: 1px solid $primary;
+      color: $text-over-primary;
+      display: inline-block;
+      @include font-size(20);
+      padding: 1em;
+    }
 
-  &__time {
-    background: $text-over-primary;
-    border: 1px solid $primary;
-    color: $primary;
-  }
-
-  &__title {
-
+    .schedule-slot__time {
+      background: $text-over-primary;
+      border: 1px solid $primary;
+      color: $primary;
+      min-width: 5em;
+      text-align: center;
+    }
   }
 
   &__description {
-    @include flex(1 0 75%);
+    @include flex(1 0 100%);
     padding-top: .5em;
   }
 
+  &__biography {
+    @include flex(1 0 75%);
+    @include order(2);
+  }
+
   &__speaker {
-    @include flex(1 0 25%);
+    @include flex(1 0 100px);
     @include order(1);
-    margin-top: -3em;
+
+    text-align: center;
+  }
+
+  &--party {
+    background-color: $primary;
+
+    .schedule-slot__description {
+      color: $text-over-primary;
+      padding: .5em;
+
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
