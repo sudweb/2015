@@ -87,7 +87,7 @@
   </div>
 
   <ol class="schedule-list">
-    <li class="schedule-slot schedule-slot--full" data-toggle-bio=".speaker-bio">
+    <li class="schedule-slot schedule-slot--full" id="boris-schapira">
       <header>
         <h4 class="schedule-slot__time">9h10</h4>
         <h3 class="schedule-slot__title">Ce que la parentalité m'a appris en gestion de projet</h3>
@@ -97,8 +97,9 @@
         Marvin Larry Reynolds, of Jedburg, South Carolina, invited Murray to his 64th birthday party in September 2014. Of course, Murray showed up. But he didn't just sit quietly in the corner. Chef Brett McKee, a friend of Murray's, was catering the party and blessed the internet with some fantastic pictures from the party, and even video of Murray and other attendees dancing to classic tracks like "Turn Down For What."
       </p>
 
-      <div class="speaker-bio" hidden id="boris-schapira">
+      <div class="speaker-bio schedule-slot__biography">
         <h3 class="speaker-bio__name">Boris Schapira</h3>
+        <h4 class="speaker-bio__title">Chef de projet paternel</h4>
 
         <p class="speaker-bio__biography">
           Boris est consultant et formateur Web chez Clever Age en France.
@@ -107,12 +108,7 @@
 
       <div class="schedule-slot__speaker">
         <div class="speaker-avatar">
-          <a href="#boris-schapira" data-action="toggle" data-toggle="bio">
-            <img src="img/orateurs/boris-schapira.jpg" alt="Boris Schapira" class="speaker-avatar__image"/>
-
-            <span class="speaker-avatar__name">Boris Schapira</span>
-            <span class="speaker-avatar__title">Chef de projet paternel</span>
-          </a>
+          <img src="img/orateurs/boris-schapira.jpg" alt="Boris Schapira" class="speaker-avatar__image"/>
         </div>
       </div>
     </li>
@@ -122,6 +118,77 @@
         <h4 class="schedule-slot__time">10h00</h4>
         <h3 class="schedule-slot__title">Lightning Talks</h3>
       </header>
+
+      <div class="schedule-slot__description">
+        4 conférences éclair de 5 minutes pour se détendre et apprendre rapidement :
+
+        <ul class="list-grid">
+          <li>
+            <article class="speaker-bio schedule-slot__biography">
+              <h3 class="speaker-bio__name">Chouette orateur</h3>
+              <h4 class="speaker-bio__title">Bientôt annoncé !</h4>
+
+              <p class="schedule-slot__title">
+                Cuisiner un chili con carne végétarien avec du bacon
+              </p>
+            </article>
+
+            <div class="schedule-slot__speaker">
+              <div class="speaker-avatar">
+                <img src="img/you-re-awesome.jpg" alt="" class="speaker-avatar__image"/>
+              </div>
+            </div>
+          </li>
+          <li>
+            <article class="speaker-bio schedule-slot__biography">
+              <h3 class="speaker-bio__name">Chouette orateur</h3>
+              <h4 class="speaker-bio__title">Bientôt annoncé !</h4>
+
+              <p class="schedule-slot__title">
+                Sud Web à Montpellier sans kayak c'est possible !
+              </p>
+            </article>
+
+            <div class="schedule-slot__speaker">
+              <div class="speaker-avatar">
+                <img src="img/you-re-awesome.jpg" alt="" class="speaker-avatar__image"/>
+              </div>
+            </div>
+          </li>
+          <li>
+            <article class="speaker-bio schedule-slot__biography">
+              <h3 class="speaker-bio__name">Chouette orateur</h3>
+              <h4 class="speaker-bio__title">Bientôt annoncé !</h4>
+
+              <p class="schedule-slot__title">
+                Manger du cheddar malgré des allergies au lactose
+              </p>
+            </article>
+
+            <div class="schedule-slot__speaker">
+              <div class="speaker-avatar">
+                <img src="img/you-re-awesome.jpg" alt="" class="speaker-avatar__image"/>
+              </div>
+            </div>
+          </li>
+          <li>
+            <article class="speaker-bio schedule-slot__biography">
+              <h3 class="speaker-bio__name">Chouette orateur</h3>
+              <h4 class="speaker-bio__title">Bientôt annoncé !</h4>
+
+              <p class="schedule-slot__title">
+                La soupe aux lentilles sans corail
+              </p>
+            </article>
+
+            <div class="schedule-slot__speaker">
+              <div class="speaker-avatar">
+                <img src="img/you-re-awesome.jpg" alt="" class="speaker-avatar__image"/>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </li>
 
     <li class="schedule-slot schedule-slot--break">
@@ -131,7 +198,7 @@
       </header>
     </li>
 
-    <li class="schedule-slot schedule-slot--full">
+    <li class="schedule-slot schedule-slot--full schedule-slot--debate">
       <header>
         <h4 class="schedule-slot__time">16h00</h4>
         <h3 class="schedule-slot__title">about:blank</h3>
@@ -140,13 +207,23 @@
       <p class="schedule-slot__description">
         Marvin Larry Reynolds, of Jedburg, South Carolina, invited Murray to his 64th birthday party in September 2014. Of course, Murray showed up. But he didn't just sit quietly in the corner. Chef Brett McKee, a friend of Murray's, was catering the party and blessed the internet with some fantastic pictures from the party, and even video of Murray and other attendees dancing to classic tracks like "Turn Down For What."
       </p>
+    </li>
 
-      <div class="schedule-slot__speaker">
-        <div class="speaker-avatar">
-          <a href="#boris-schapira" data-action="toggle" data-toggle="bio">
-            <img src="img/you-re-awesome.jpg" alt="You" class="speaker-avatar__image"/>
-          </a>
-        </div>
+    <li class="schedule-slot schedule-slot--party">
+      <header>
+        <h4 class="schedule-slot__time">18h30</h4>
+        <h3 class="schedule-slot__title">Soirée communautaire</h3>
+      </header>
+
+      <div class="schedule-slot__description">
+        <p>
+          Les conversations continuent dans la joie et la bonne humeur,
+          un verre à la main, entre participants, orateurs et organisateurs.
+        </p>
+
+        <p>
+          <img src="http://placehold.it/600x300" alt="" class="img-responsive"/>
+        </p>
       </div>
     </li>
   </ol>
