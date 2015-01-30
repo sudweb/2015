@@ -1,5 +1,11 @@
 $avatar-width: 150px;
 
+@mixin avatar {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 .1em .1em rgba(black, .3);
+}  
+
 .speaker {
   &:hover {
     opacity: 0.9;
@@ -8,10 +14,8 @@ $avatar-width: 150px;
   .avatar {
     text-align: center;
     img {
-      border: 3px solid #fff;
-      border-radius: 50%;
-      box-shadow: 0 .1em .1em rgba(black, .3);
-      max-width: 150px;
+      @include avatar;
+      max-width: $avatar-width;
     }
   }
 
@@ -40,8 +44,8 @@ $avatar-width: 150px;
 
   &__image {
     margin: 0 1.5em 0.5em 0;
+    @include avatar;
     max-width: 100px;
-
     @include respond-to(medium-and-up) {
       margin-left: auto;
       margin-right: auto;
@@ -56,3 +60,5 @@ $avatar-width: 150px;
     font-size: .9em;
   }
 }
+
+
