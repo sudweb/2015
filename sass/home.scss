@@ -1,5 +1,20 @@
 .home {
 
+   .home-intro {
+    padding: 5rem 3rem;
+    
+    h2,
+    .home-intro__title {
+      @include font-size(27);
+      font-style: italic;
+      margin-bottom: 1em;
+      @include respond-to(medium-and-up) {
+        @include font-size(36)
+      }
+    }
+
+  }
+
   .columned-content h3 {
     text-align: center;
     text-transform: uppercase;
@@ -15,7 +30,6 @@
     white-space: nowrap;
   }
 
-  .orateur {
   .speaker {
     h3,
     h4 {
@@ -45,17 +59,13 @@
       display: inline-block;
       vertical-align: top;
     }
-    .column.orateur {
     .column.speaker {
       text-align: center;
       width: 49%;
     }
   }
-  @include respond-to(medium-only) {
-  }
 
   @include respond-to(wide) {
-    .column.orateur {
     .column.speaker {
       width: 24%;
     }
