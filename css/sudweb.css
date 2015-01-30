@@ -787,9 +787,18 @@ aside.ateliers:before {
     width: 35%; }
  }
 
-.accueil #salles {
-  text-align: center; }
-.accueil .columned-content h3 {
+.home .home-intro {
+  padding: 5rem 3rem; }
+  .home .home-intro h2, .home .home-intro .home-intro__title {
+    font-size: 27px;
+    font-size: 2.7rem;
+    font-style: italic;
+    margin-bottom: 1em; }
+    @media only screen and (min-width: 45em) {
+      .home .home-intro h2, .home .home-intro .home-intro__title {
+        font-size: 36px;
+        font-size: 3.6rem; } }
+.home .columned-content h3 {
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
@@ -802,42 +811,44 @@ aside.ateliers:before {
   padding: 1rem 0;
   min-height: 36px;
   white-space: nowrap; }
-.accueil .orateur {
+.home .speaker {
   margin-bottom: 1.5em; }
-  .accueil .orateur h3, .accueil .orateur h4 {
+  .home .speaker h3, .home .speaker h4 {
     text-align: center; }
-  .accueil .orateur a {
+  .home .speaker a {
     display: block;
     color: #312529;
     text-decoration: none; }
-    .accueil .orateur a:hover .link {
+    .home .speaker a:hover .link {
       text-decoration: none; }
-  .accueil .orateur .link {
+  .home .speaker .link {
     color: #10b6bf;
     text-decoration: underline; }
 @media only screen and (min-width: 32em) {
-  .accueil .column {
+  .home .column {
     display: inline-block;
     vertical-align: top; }
 
-  .accueil .column.orateur {
+  .home .column.speaker {
     text-align: center;
     width: 49%; }
  }
 @media only screen and (min-width: 45em) {
-  .accueil .column.orateur {
+  .home .column.speaker {
     width: 24%; }
  }
 
-.orateur:hover {
+.speaker:hover {
   opacity: 0.9;
   background: #f4f2f3; }
-.orateur .avatar img {
-  border: 3px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.3);
-  max-width: 150px; }
-.orateur .notice {
+.speaker .avatar {
+  text-align: center; }
+  .speaker .avatar img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.3);
+    max-width: 150px; }
+.speaker .notice {
   font-style: italic; }
 
 .speaker-bio__name {
