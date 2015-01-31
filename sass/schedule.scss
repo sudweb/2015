@@ -22,6 +22,7 @@
     margin-bottom: 1em;
 
     .schedule-slot__time,
+    .schedule-slot__extra,
     .schedule-slot__title {
       background-color: $primary;
       border: 1px solid $primary;
@@ -37,6 +38,12 @@
       color: $primary;
       min-width: 5em;
       text-align: center;
+    }
+
+    .schedule-slot__extra {
+      background-color: transparent;
+      border-color: transparent;
+      color: lighten($primary, 10%);
     }
   }
 
