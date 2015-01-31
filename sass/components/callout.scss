@@ -3,7 +3,6 @@
 .callout, .callout-discrete {
   @include flexbox;
   @include flex-flow(wrap row);
-
   clear: both;
 
   h2 {

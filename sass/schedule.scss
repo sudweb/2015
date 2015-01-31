@@ -10,7 +10,7 @@
   @include flex-flow(wrap row);
   @include align-items(stretch);
 
-  margin: 1.5em;
+  margin: 1.5em 0;
 
   &.schedule-slot--break {
     background-color: $light-gray;
