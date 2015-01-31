@@ -900,7 +900,7 @@ aside.ateliers:before {
   -webkit-align-items: stretch;
   -moz-align-items: stretch;
   align-items: stretch;
-  margin: 1.5em; }
+  margin: 1.5em 0; }
   .schedule-slot.schedule-slot--break {
     background-color: #ddd; }
   .schedule-slot header {
