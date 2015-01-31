@@ -904,7 +904,7 @@ aside.ateliers:before {
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
     margin-bottom: 1em; }
-    .schedule-slot header .schedule-slot__time, .schedule-slot header .schedule-slot__title {
+    .schedule-slot header .schedule-slot__time, .schedule-slot header .schedule-slot__extra, .schedule-slot header .schedule-slot__title {
       background-color: #f64b3a;
       border: 1px solid #f64b3a;
       color: #fef8f7;
@@ -918,6 +918,10 @@ aside.ateliers:before {
       color: #f64b3a;
       min-width: 5em;
       text-align: center; }
+    .schedule-slot header .schedule-slot__extra {
+      background-color: transparent;
+      border-color: transparent;
+      color: #f8786b; }
   .schedule-slot__description {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 100%;
