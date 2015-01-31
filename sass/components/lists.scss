@@ -9,6 +9,22 @@
   li {
     display: inline;
   }
+
+  &--choices {
+    line-height: 1.125;
+    margin: 0;
+    text-align: left;
+
+    li:before {
+      content: "•";
+      margin: 0 .2em 0 .15em;
+    }
+
+    li:first-child:before{
+      content: "";
+      margin: 0;
+    }
+  }
 }
 
 .list-grid {
