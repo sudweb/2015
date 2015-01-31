@@ -7,16 +7,27 @@
   clear: both;
 
   h2 {
-    @include flex(1);
+    @include flex(1 0 100%);
     padding: 1em;
-    max-width: 20%;
   }
 
   .content,
   .excerpt,
   .more {
-    @include flex(2);
     padding: 1em;
+  }
+
+  @include respond-to(medium-and-up) {
+    h2 {
+      @include flex(1);
+      max-width: 20%;
+    }
+
+    .content,
+    .excerpt,
+    .more {
+      @include flex(2);
+    }
   }
 }
 
