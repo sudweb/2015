@@ -2,11 +2,10 @@
 
    .home-intro {
     padding: 5rem 3rem;
-    
+
     h2,
     .home-intro__title {
       @include font-size(27);
-      font-style: italic;
       margin-bottom: 1em;
       @include respond-to(medium-and-up) {
         @include font-size(36)
