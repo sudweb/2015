@@ -727,72 +727,48 @@ aside.ateliers:before {
   margin: 1.5em 0;
   padding: 3em 0; }
 
+.callout, .callout-discrete {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap row;
+  -moz-flex-flow: wrap row;
+  -ms-flex-flow: wrap row;
+  flex-flow: wrap row;
+  clear: both; }
+  .callout h2, .callout-discrete h2 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 1em;
+    max-width: 20%; }
+  .callout .content, .callout .excerpt, .callout .more, .callout-discrete .content, .callout-discrete .excerpt, .callout-discrete .more {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    -moz-box-flex: 2;
+    -moz-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding: 1em; }
+
 .callout {
   background: #402f35;
   color: #f4f2f3;
-  padding: 1.75em 1em 1em; }
+  margin: 2em 0; }
   .callout h2 {
     background: #c51b3f;
-    color: #fcf1f2;
-    display: inline-block;
-    position: absolute;
-    padding: 0.5rem 1em;
-    z-index: 1;
-    left: -1.4em;
-    top: -1.8em; }
-    .callout h2:before {
-      content: "";
-      display: block;
-      bottom: -0.6em;
-      left: 0;
-      position: absolute;
-      z-index: -1;
-      border-style: solid;
-      border-color: #6b0f22 transparent transparent transparent;
-      border-width: 0.6em 0 0 0.6em; }
-
-.callout, .callout-discrete {
-  clear: both;
-  margin: 4em 0 2em;
-  max-width: 60em;
-  position: relative; }
-  .callout h2, .callout-discrete h2 {
-    font-weight: normal;
-    margin: 1em;
-    min-height: 36px;
-    text-transform: uppercase; }
-  .callout .more, .callout-discrete .more {
-    padding-top: 0.5em;
-    border-top: 1px solid #7d6a73; }
-  @media only screen and (min-width: 45em) {
-    .callout .excerpt, .callout-discrete .excerpt {
-      display: inline-block;
-      vertical-align: top;
-      width: 52%; }
-
-    .callout .more, .callout-discrete .more {
-      border-left: 3px solid #7d6a73;
-      display: inline-block;
-      width: 45%;
-      padding-left: 1em;
-      padding-top: 0;
-      border-top: none; }
- }
-
-@media only screen and (min-width: 45em) {
-  .callout-discrete .excerpt {
-    width: 60%; }
-
-  .callout-discrete .more {
-    width: 35%; }
- }
+    color: #fcf1f2; }
 
 .home .home-intro {
   padding: 5rem 3rem; }
   .home .home-intro h2, .home .home-intro .home-intro__title {
     font-size: 27px;
     font-size: 2.7rem;
-    font-style: italic;
     margin-bottom: 1em; }
     @media only screen and (min-width: 45em) {
       .home .home-intro h2, .home .home-intro .home-intro__title {
