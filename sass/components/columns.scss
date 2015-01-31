@@ -6,6 +6,27 @@
 .columned-content {
   @include flexbox;
 
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    @include font-size(20);
+    font-weight: normal;
+
+    background: $primary;
+    color: $text-over-primary;
+    margin: 1em 0;
+    padding: 1rem 0;
+    white-space: nowrap;
+  }
+
+  @include respond-to(narrow){
+    @include flex-flow(wrap row);
+
+    > article {
+      @include flex(1 0 100%);
+    }
+  }
+
   @include respond-to(medium-only){
     @include flex-flow(wrap row);
 
