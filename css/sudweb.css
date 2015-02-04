@@ -686,6 +686,8 @@ aside.ateliers:before {
   text-align: right; }
   .pageheader.with-hero {
     margin-bottom: 0; }
+  .pageheader h1 {
+    margin: 0; }
   .pageheader .nav {
     text-align: left; }
     @media only screen and (max-width: 45em) {
