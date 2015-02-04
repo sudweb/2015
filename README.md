@@ -70,4 +70,4 @@ To share what you have done without publishing it live, use the following comman
 npm run deploy-dev
 ```
 
-The content will be available on `http://<your username>.github.io/2014`.
+The content will be available on `http://<your username>.github.io/2015`.
