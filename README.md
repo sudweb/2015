@@ -10,7 +10,7 @@ Just fork this repo, commit your changes and open a pull request.
 
 This project uses Sass, node and Grunt because we are cool kids.
 
-You shoud be able to install Compass and node in a few commands:
+You shoud be able to install node in a few commands:
 
 * `brew install node` on Mac OS X for instance
 
@@ -23,15 +23,9 @@ Now you just have to type `grunt` to run tasks and watch the changes :)
 ```
 user@host ~/www/sudweb/# grunt
 Running "htmlhint:build" (htmlhint) task
->> 1 file lint free.
+>> 6 files lint free.
 
-Running "compass:dist" (compass) task
-   create css/ie.css (0.137s)
-   create css/normalize.css (0.074s)
-   create css/print.css (0.004s)
-   create css/screen.css (0.124s)
-overwrite css/sudweb.css (0.502s)
-Compilation took 0.911s
+Running "sass:dist" (sass) task
 
 Running "watch" task
 Waiting...
@@ -59,11 +53,11 @@ They will be located in `img/orateurs/150`.
 
 ### Production
 
-Once you are satisfied and are ready to deploy on `sudweb.fr/2014`, proceed as below:
+Once you are satisfied and are ready to deploy on `sudweb.fr/2015`, proceed as below:
 
 ```bash
 npm run deploy-prod
-ssh sudweb 'cd www/2014 && git pull'
+ssh sudweb 'cd www/2015 && git pull'
 ```
 
 **Notice**: `sudweb` is a hostname configured in `~/.ssh/config`.
