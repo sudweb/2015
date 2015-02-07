@@ -1,4 +1,7 @@
-/* SUDWEB 2014 TEAM */
+/* SUDWEB 2015 TEAM */
+
+	Amanda Martinez (@MartinezAmandaa)
+	from Montpellier, France
 
 	Loïc Mathaud (@loicmathaud)
 	from Saint-Étienne, France
@@ -14,14 +17,14 @@
 
 /* THANKS * /
 
-	Design by Corinne Sanchez (@coc_san)
+	Original Design by Corinne Sanchez (@coc_san)
 	from Toulouse, France
 
-  original HTML and CSS by Goulven Champenois (@goulvench)
-  from Lyon, France
+  	Original HTML and SASS by Goulven Champenois (@goulvench)
+  	from Lyon, France
 
 /* SITE */
 
-	Last update:2015/01/22
-	Web Standards: HTML5, CSS3, Javascript
-	Tools: Git, Node, npm, Grunt, Sass, Compass
+	Made with love and open-source tools : Git, npm, Grunt, Sass
+	Github repository : https://github.com/sudweb/2015
+	Kindly hosted by Nicolas and Cyril from https://www.alwaysdata.com
