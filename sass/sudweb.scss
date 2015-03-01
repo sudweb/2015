@@ -1,6 +1,17 @@
 @import "vendor/normalize";
+// Mixins
+//
+// Styleguide mixins.
 @import "mixins";
+// Variables
+// 
+// Styleguide variables.
 @import "variables";
+// Components
+// 
+// Reusable components that can be used across the site.
+// 
+// Styleguide components.
 @import "components/action";
 @import "components/lists";
 @import "components/columns";

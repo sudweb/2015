@@ -59,6 +59,8 @@ coverage
 # Styles
 .sass-cache
 css
+styleguide-template
+styleguide
 
 # node-waf configuration
 .lock-wscript
