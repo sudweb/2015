@@ -3,10 +3,17 @@ $narrow: 32em;
 $medium: 45em;
 $widest: 60em;
 //*********************  MIXINS  *************/
+
+// Express font-size in rem and fallback to px for older browsers
+//
+// $size - The font size
+//
+// Compatible in IE9+, Firefox 34+, Chrome 31+, Safari 7+, Opera 26+.
 @mixin font-size($size: 16){
 	font-size: $size + px;
 	font-size: ($size / 10) + rem;
 }
+
 @mixin vendorize($property, $value, $which: property) {
 	@if ($which == value) {
 		$property: -webkit-#{$value};
@@ -95,6 +102,10 @@ $widest: 60em;
 		}
 	}
 }
+
+// Clear floats
+//
+// Compatible in IE8+, Firefox 34+, Chrome 31+, Safari 7+, Opera 26+.
 @mixin clearfix {
 	&:after {
 		content: "";

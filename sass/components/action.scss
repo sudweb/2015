@@ -1,5 +1,18 @@
 @import "../variables";
 
+/*
+Call to action
+
+.action                   - Bouton d'action
+.action:hover             - Fonce légèrement la couleur
+.action.action-disabled   - Désature la couleur
+
+Markup: 
+<a class="{{modifier_class}}">action</a>
+
+Styleguide buttons
+*/
+
 .action,
 .action:link,
 .action:visited {
