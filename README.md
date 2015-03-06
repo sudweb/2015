@@ -21,7 +21,7 @@ You shoud be able to install node in a few commands:
 Now you just have to type `grunt` to run tasks and watch the changes :)
 
 ```
-user@host ~/www/sudweb/# grunt
+$ npm run watch
 Running "htmlhint:build" (htmlhint) task
 >> 6 files lint free.
 
