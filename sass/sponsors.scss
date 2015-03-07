@@ -48,10 +48,10 @@
     margin: 1em;
     display: inline-block;
     vertical-align: middle;
-    max-width: 100px;
+    max-width: 150px;
     height: auto;
     @include respond-to(medium-and-up) {
-      max-width: 150px;
+      max-width: 300px;
     }
   }
 }
