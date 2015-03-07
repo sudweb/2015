@@ -1012,11 +1012,11 @@ aside.ateliers:before {
     margin: 1em;
     display: inline-block;
     vertical-align: middle;
-    max-width: 100px;
+    max-width: 150px;
     height: auto; }
     @media only screen and (min-width: 45em) {
       .sponsors img {
-        max-width: 150px; } }
+        max-width: 300px; } }
 
 .salles .ateliers, .salles .soirees {
   background: #fff;
