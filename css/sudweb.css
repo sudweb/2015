@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -324,11 +325,11 @@ td, th {
   border: none;
   background: #10b6bf;
   border-radius: 2px;
-  box-shadow: 1px 1px 0.1em rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px .1em rgba(0, 0, 0, 0.2);
   color: #feffff;
   cursor: pointer;
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
   text-decoration: none;
   text-shadow: 1px 1px 1px #444; }
 
@@ -352,7 +353,7 @@ td, th {
     text-align: left; }
     .list-inline--choices li:before {
       content: "•";
-      margin: 0 0.2em 0 0.15em; }
+      margin: 0 .2em 0 .15em; }
     .list-inline--choices li:first-child:before {
       content: "";
       margin: 0; }
@@ -391,7 +392,7 @@ td, th {
     -moz-flex: 1 0 33%;
     -ms-flex: 1 0 33%;
     flex: 1 0 33%;
-    margin: 0.5em; }
+    margin: .5em; }
 
 .columned-content {
   display: -webkit-box;
@@ -480,7 +481,7 @@ h1, h2, h3, p, ul, ol, li {
 h1 {
   font-size: 24px;
   font-size: 2.4rem;
-  margin: 0 0 0.5em; }
+  margin: 0 0 .5em; }
 
 h2 {
   font-size: 22px;
@@ -499,11 +500,11 @@ blockquote {
     display: block;
     height: 0;
     content: "“";
-    margin-left: -0.6em;
+    margin-left: -.6em;
     font: 400%/1 Cochin, Georgia, "Times New Roman", serif; }
 
 p {
-  margin-bottom: 0.5em; }
+  margin-bottom: .5em; }
 
 ul, ol {
   margin: 0 0 1em 1em; }
@@ -546,7 +547,7 @@ section, .container {
   display: inline; }
 .nav span, .nav a:link, .nav a:visited {
   display: block;
-  padding: 0.75em 0.5em; }
+  padding: .75em .5em; }
 .nav a:focus, .nav a:hover {
   text-decoration: none; }
 
@@ -566,11 +567,11 @@ a:link, a:visited {
 
 .to-nav:before {
   content: "☰";
-  padding-right: 0.3em; }
+  padding-right: .3em; }
 
 .to-nav {
   text-align: right;
-  padding: 0.3em 0.6em 0.4em; }
+  padding: .3em .6em .4em; }
   .to-nav:link, .to-nav:visited {
     color: #f4f2f3; }
   .to-nav:hover {
@@ -616,7 +617,7 @@ h1, .divider {
     height: 1px;
     width: 15%;
     position: absolute;
-    top: 0.62em;
+    top: .62em;
     right: 85%; }
     @media only screen and (min-width: 45em) {
       .divider:before, .divider:after {
@@ -631,7 +632,7 @@ h1, .divider {
 
 .center-block {
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
   font-size: 16px;
   font-size: 1.6rem; }
 
@@ -677,7 +678,7 @@ aside.ateliers:before {
   @media only screen and (min-width: 45em) {
     .logo {
       width: auto;
-      top: 0.5em; } }
+      top: .5em; } }
 
 .pageheader {
   background: #402f35;
@@ -698,16 +699,16 @@ aside.ateliers:before {
         right: 0;
         z-index: 1; }
         .pageheader .nav:target {
-          -webkit-transition: top 0.3s ease-out;
-          -moz-transition: top 0.3s ease-out;
-          -ms-transition: top 0.3s ease-out;
-          -o-transition: top 0.3s ease-out;
-          transition: top 0.3s ease-out;
+          -webkit-transition: top .3s ease-out;
+          -moz-transition: top .3s ease-out;
+          -ms-transition: top .3s ease-out;
+          -o-transition: top .3s ease-out;
+          transition: top .3s ease-out;
           top: 0; } }
     @media only screen and (min-width: 45em) {
       .pageheader .nav {
         text-align: right;
-        padding: 0.5em 0; }
+        padding: .5em 0; }
         .pageheader .nav .close {
           display: none; } }
     .pageheader .nav a, .pageheader .nav span {
@@ -725,7 +726,7 @@ aside.ateliers:before {
       border-radius: 2px;
       color: #feffff;
       text-decoration: none;
-      transition: background 0.3s ease, color 0.3s ease; }
+      transition: background .3s ease, color .3s ease; }
       .pageheader .nav a:focus:hover, .pageheader .nav a:focus:focus, .pageheader .nav a:hover:hover, .pageheader .nav a:hover:focus, .pageheader .nav .current:hover, .pageheader .nav .current:focus, .pageheader .nav .cta:hover, .pageheader .nav .cta:focus {
         background: #fff;
         color: #10b5be; }
@@ -754,8 +755,7 @@ aside.ateliers:before {
     .pageheader .date {
       display: inline;
       text-transform: uppercase;
-      padding-left: 0.25em; }
- }
+      padding-left: .25em; } }
 
 .hero {
   background: #ddd;
@@ -793,15 +793,13 @@ aside.ateliers:before {
       -ms-flex: 1;
       flex: 1;
       max-width: 20%; }
-
     .callout .content, .callout .excerpt, .callout .more, .callout-discrete .content, .callout-discrete .excerpt, .callout-discrete .more {
       -webkit-box-flex: 2;
       -webkit-flex: 2;
       -moz-box-flex: 2;
       -moz-flex: 2;
       -ms-flex: 2;
-      flex: 2; }
- }
+      flex: 2; } }
 
 .callout {
   background: #402f35;
@@ -838,15 +836,12 @@ aside.ateliers:before {
   .home .column {
     display: inline-block;
     vertical-align: top; }
-
   .home .column.speaker {
     text-align: center;
-    width: 49%; }
- }
+    width: 49%; } }
 @media only screen and (min-width: 45em) {
   .home .column.speaker {
-    width: 24%; }
- }
+    width: 24%; } }
 
 .speaker:hover {
   opacity: 0.9;
@@ -856,7 +851,7 @@ aside.ateliers:before {
   .speaker .avatar img {
     border-radius: 50%;
     border: 3px solid #fff;
-    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.3);
+    box-shadow: 0 .1em .1em rgba(0, 0, 0, 0.3);
     max-width: 150px; }
 .speaker .notice {
   font-style: italic; }
@@ -872,7 +867,7 @@ aside.ateliers:before {
   margin: 0 1.5em 0.5em 0;
   border-radius: 50%;
   border: 3px solid #fff;
-  box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 .1em .1em rgba(0, 0, 0, 0.3);
   max-width: 100px; }
   @media only screen and (min-width: 45em) {
     .speaker-avatar__image {
@@ -881,7 +876,7 @@ aside.ateliers:before {
 .speaker-avatar__name {
   font-weight: bold; }
 .speaker-avatar__title {
-  font-size: 0.9em; }
+  font-size: .9em; }
 
 .schedule-list {
   margin: 1.5em 0;
@@ -939,7 +934,7 @@ aside.ateliers:before {
     -moz-flex: 1 0 100%;
     -ms-flex: 1 0 100%;
     flex: 1 0 100%;
-    padding-top: 0.5em; }
+    padding-top: .5em; }
   .schedule-slot__biography {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 75%;
@@ -969,7 +964,7 @@ aside.ateliers:before {
     background-color: #f64b3a; }
     .schedule-slot--party .schedule-slot__description {
       color: #fef8f7;
-      padding: 0.5em; }
+      padding: .5em; }
       .schedule-slot--party .schedule-slot__description :last-child {
         margin-bottom: 0; }
 
@@ -990,7 +985,7 @@ aside.ateliers:before {
       border-top: 1px solid;
       border-bottom: 1px dotted;
       position: absolute;
-      top: 0.62em;
+      top: .62em;
       right: 75%; }
     .sponsors h3:after {
       right: auto;
@@ -1020,7 +1015,7 @@ aside.ateliers:before {
 
 .salles .ateliers, .salles .soirees {
   background: #fff;
-  padding: 0.5em 1em; }
+  padding: .5em 1em; }
   @media only screen and (max-width: 45em) {
     .salles .ateliers, .salles .soirees {
       border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1035,7 +1030,7 @@ aside.ateliers:before {
         margin-right: 3%; } }
   .salles .ateliers h2, .salles .soirees h2 {
     color: #f64b3a;
-    margin-bottom: 0.5em; }
+    margin-bottom: .5em; }
 
 .form .row {
   margin-bottom: 1.5em; }
@@ -1045,7 +1040,7 @@ aside.ateliers:before {
   display: inline; }
 .form select, .form textarea, .form input[type="email"], .form input[type="text"] {
   border: 1px solid rgba(64, 47, 53, 0.7);
-  padding: 0.3em;
+  padding: .3em;
   width: 50%; }
 
 .pagefooter {
@@ -1102,7 +1097,7 @@ aside.ateliers:before {
     .pagefooter .connect, .pagefooter .precedentes {
       padding-top: 1em; } }
   .pagefooter .connect h2, .pagefooter .precedentes h2 {
-    margin-bottom: 0.25em; }
+    margin-bottom: .25em; }
   .pagefooter .twitter, .pagefooter .facebook, .pagefooter .lanyrd {
     display: inline-block;
     text-indent: -9999px;
@@ -1120,14 +1115,14 @@ aside.ateliers:before {
     background-position: left bottom; }
   .pagefooter .footer li {
     display: inline;
-    margin-right: 0.5em; }
+    margin-right: .5em; }
     .pagefooter .footer li:not(:last-child):after {
       content: "|";
-      margin-left: 0.5em; }
+      margin-left: .5em; }
   .pagefooter .footer a:link, .pagefooter .footer a:visited {
     margin-right: 0; }
   .pagefooter .colophon {
     clear: both;
-    margin-bottom: 0.5em; }
+    margin-bottom: .5em; }
 
 /*# sourceMappingURL=sudweb.css.map */
