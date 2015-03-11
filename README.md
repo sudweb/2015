@@ -1,26 +1,42 @@
-# sudweb.fr/2015 [![Stories in Ready](https://badge.waffle.io/sudweb/2015.png?label=ready&title=Ready)](https://waffle.io/sudweb/2015) [![Build Status](https://travis-ci.org/sudweb/2015.png?branch=master)](https://travis-ci.org/sudweb/2015)
+# Sud Web 2015 [![Stories in Ready](https://badge.waffle.io/sudweb/2015.png?label=ready&title=Ready)](https://waffle.io/sudweb/2015) [![Build Status](https://travis-ci.org/sudweb/2015.png?branch=master)](https://travis-ci.org/sudweb/2015)
+
+Source code for [http://sudweb.fr/2015](http://sudweb.fr/2015) event website.
 
 Just some good old static webpages. We like to KISS.
 
-## Contribute
-
-Just fork this repo, commit your changes and open a pull request.
-
 ## Requirements
 
-This project uses Sass, node and Grunt because we are cool kids.
+We mainly rely on the [Node.js®](https://nodejs.org/) platform.
 
-You shoud be able to install node in a few commands:
+Node can be easily installed with [Homebrew](http://brew.sh/) on Mac OS X, just type:
 
-* `brew install node` on Mac OS X for instance
+`brew install node`
+
+### Thumbnails
+
+You also need to install [GraphicsMagick](http://www.graphicsmagick.org).
+
+```bash
+brew install graphicsmagick
+```
 
 ## Install
 
-`npm install` will install all dependencies mentioned in the package.json file
+Clone the repo:
 
-Now you just have to type `grunt` to run tasks and watch the changes :)
-
+```bash
+git clone https://github.com/sudweb/2015.git sudweb2015 && cd sudweb2015
 ```
+
+To install all dependencies mentioned in the `package.json` file, type:
+
+`npm install` 
+
+In order to automatically check for HTML and Sass changes, type:
+
+`npm run watch` 
+
+```bash
 $ npm run watch
 Running "htmlhint:build" (htmlhint) task
 >> 6 files lint free.
@@ -31,23 +47,7 @@ Running "watch" task
 Waiting...
 ```
 
-Happy coding!
-
-## Thumbnails
-
-You initially need to install [GraphicsMagick](http://www.graphicsmagick.org).
-
-```bash
-brew install graphicsmagick
-```
-
-Then run, each time you need to regenerate thumbnails:
-
-```bash
-npm run thumbs
-```
-
-They will be located in `img/orateurs/150`.
+To ease browser debugging, we may add support for browsersync soon, but for now there's no live reload.
 
 ## Deploy
 
@@ -56,11 +56,19 @@ They will be located in `img/orateurs/150`.
 Once you are satisfied and are ready to deploy on `sudweb.fr/2015`, proceed as below:
 
 ```bash
-npm run deploy-prod
-ssh sudweb 'cd www/2015 && git pull'
+npm run deploy-prod && ssh sudweb 'cd www/2015 && git pull'
 ```
 
-**Notice**: `sudweb` is a hostname configured in `~/.ssh/config`.
+`sudweb` is a hostname configured in `~/.ssh/config`:
+
+```
+# Sud Web
+Host sudweb
+Hostname ssh.alwaysdata.com
+User sudweb
+```
+
+**Notice**: In order to be able to deploy, you need to add an [SSH key](https://help.github.com/articles/generating-ssh-keys/) on your Github account. You can also add your key in the `.ssh/authorized_keys` file on the server.
 
 ### Development
 
@@ -71,3 +79,11 @@ npm run deploy-dev
 ```
 
 The content will be available on `http://<your username>.github.io/2015`.
+
+## Contribute
+
+You can also [create an issue](https://github.com/sudweb/2015/issues/new) on GitHub, if you have found a bug.
+
+If you wanna help, you may want to [fork](https://help.github.com/articles/fork-a-repo/) the repo, then commit your changes and [open a pull request](https://github.com/sudweb/2015/pulls).
+
+Made with love by Sud Web Team.
