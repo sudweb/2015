@@ -8,7 +8,7 @@
     "url": "http://sudweb.fr/"
   },
   "scripts": {
-    "watch": "npm run thumbs && grunt & http-server -o ",
+    "watch": "npm run thumbs && grunt && http-server -o ",
     "test": "grunt htmlhint",
     "thumbs": "cd img/orateurs && gm mogrify -thumbnail x150 -gravity center -crop 150x150+0+0 -output-directory 150 -colorspace Gray +contrast *.{jpg,png,gif}",
     "deploy-dev": "npm run thumbs && grunt deploy-dev",
