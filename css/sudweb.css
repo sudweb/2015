@@ -994,7 +994,7 @@ aside.ateliers:before {
     color: #FEB100; }
   .sponsors .argent {
     color: #979B9D; }
-  .sponsors .bronze {
+  .sponsors .bronze, .sponsors .sponsors__bronze {
     color: #402f35; }
   .sponsors ul {
     list-style: none;
@@ -1012,6 +1012,9 @@ aside.ateliers:before {
     @media only screen and (min-width: 45em) {
       .sponsors img {
         max-width: 300px; } }
+
+.sponsors__bronze li:not(:last-child):after {
+  content: " - "; }
 
 .salles .ateliers, .salles .soirees {
   background: #fff;
