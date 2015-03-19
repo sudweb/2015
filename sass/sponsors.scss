@@ -32,7 +32,8 @@
   .argent {
     color: #979B9D;
   }
-  .bronze {
+  .bronze,
+  .sponsors__bronze {
     color: $inverted;
   }
   ul {
@@ -53,5 +54,11 @@
     @include respond-to(medium-and-up) {
       max-width: 300px;
     }
+  }
+}
+
+.sponsors__bronze {
+  li:not(:last-child):after {
+    content: " - ";
   }
 }
