@@ -1,4 +1,4 @@
-$avatar-width: 150px;
+$avatar-width: 75px;
 
 @mixin avatar {
   border-radius: 50%;
@@ -7,7 +7,7 @@ $avatar-width: 150px;
 }
 
 .people {
-  .attendee {
+  .person {
     &:hover {
       opacity: 0.9;
       background: $text-over-inverted;
@@ -54,14 +54,14 @@ $avatar-width: 150px;
       display: inline-block;
       vertical-align: top;
     }
-    .column.attendee {
+    .column.person {
       text-align: center;
       width: 49%;
     }
   }
 
   @include respond-to(wide) {
-    .column.attendee {
+    .column.person {
       width: 24%;
     }
   }
