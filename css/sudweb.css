@@ -878,6 +878,42 @@ aside.ateliers:before {
 .speaker-avatar__title {
   font-size: .9em; }
 
+.people .person {
+  margin-bottom: 1.5em; }
+  .people .person:hover {
+    opacity: 0.9;
+    background: #f4f2f3; }
+  .people .person h3, .people .person h4 {
+    text-align: center; }
+  .people .person a {
+    display: block;
+    color: #312529;
+    text-decoration: none; }
+    .people .person a:hover .link {
+      text-decoration: none; }
+  .people .person .avatar {
+    text-align: center; }
+    .people .person .avatar img {
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 .1em .1em rgba(0, 0, 0, 0.3);
+      max-width: 75px; }
+  .people .person .notice {
+    font-style: italic; }
+  .people .person .link {
+    color: #10b6bf;
+    text-decoration: underline; }
+@media only screen and (min-width: 32em) {
+  .people .column {
+    display: inline-block;
+    vertical-align: top; }
+  .people .column.person {
+    text-align: center;
+    width: 49%; } }
+@media only screen and (min-width: 45em) {
+  .people .column.person {
+    width: 24%; } }
+
 .schedule-list {
   margin: 1.5em 0;
   padding: 0; }
