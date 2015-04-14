@@ -3,8 +3,8 @@
 var React = require('react');
 var attendees = require('../.attendees.json')
   .filter(function(person, i, arr){
-    return person.name && arr.slice(i+1, arr.length).some(function(p){
-      return p.name !== person.name;
+    return person.name && !arr.slice(i + 1, arr.length).some(function(p){
+      return p.name === person.name;
     });
   });
 
