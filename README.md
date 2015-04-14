@@ -20,6 +20,13 @@ You also need to install [GraphicsMagick](http://www.graphicsmagick.org).
 brew install graphicsmagick
 ```
 
+### Attendees
+
+```bash
+API_KEY=xxx ACCESS_TOKEN=xxx npm run get-attendees
+npm run build-attendees
+```
+
 ## Install
 
 Clone the repo:
@@ -30,11 +37,11 @@ git clone https://github.com/sudweb/2015.git sudweb2015 && cd sudweb2015
 
 To install all dependencies mentioned in the `package.json` file, type:
 
-`npm install` 
+`npm install`
 
 In order to automatically check for HTML and Sass changes, type:
 
-`npm run watch` 
+`npm run watch`
 
 ```bash
 $ npm run watch

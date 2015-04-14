@@ -1,0 +1,68 @@
+$avatar-width: 75px;
+
+@mixin avatar {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 .1em .1em rgba(black, .3);
+}
+
+.people {
+  .person {
+    &:hover {
+      opacity: 0.9;
+      background: $text-over-inverted;
+    }
+
+
+    h3,
+    h4 {
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      color: $text;
+      text-decoration: none;
+
+      &:hover .link{
+        text-decoration: none;
+      }
+    }
+
+    .avatar {
+      text-align: center;
+      img {
+        @include avatar;
+        max-width: $avatar-width;
+      }
+    }
+
+    .notice {
+      font-style: italic;
+    }
+
+    .link {
+      color: $contrast;
+      text-decoration: underline;
+    }
+
+    margin-bottom: 1.5em;
+  }
+
+  @include respond-to(narrow-and-up) {
+    .column {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .column.person {
+      text-align: center;
+      width: 49%;
+    }
+  }
+
+  @include respond-to(wide) {
+    .column.person {
+      width: 24%;
+    }
+  }
+}
