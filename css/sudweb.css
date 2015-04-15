@@ -878,6 +878,8 @@ aside.ateliers:before {
 .speaker-avatar__title {
   font-size: .9em; }
 
+.people ol {
+  list-style: none; }
 .people .person {
   margin-bottom: 1.5em; }
   .people .person:hover {
