@@ -7,6 +7,9 @@ $avatar-width: 75px;
 }
 
 .people {
+  ol {
+    list-style:none;
+  }
   .person {
     &:hover {
       opacity: 0.9;
