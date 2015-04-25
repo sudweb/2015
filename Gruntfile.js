@@ -40,6 +40,17 @@ module.exports = function (grunt) {
         }
       }
     },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'css',
+          ext: '.min.css'
+        }]
+      }
+    },
     'gh-pages': {
       'production': {
         src: '<%= deployableFiles %>',
@@ -67,5 +78,5 @@ module.exports = function (grunt) {
 
   grunt.registerTask('deploy', ['deploy-prod']);
   grunt.registerTask('deploy-dev', ['sass', 'gh-pages:dev']);
-  grunt.registerTask('deploy-prod', ['sass', 'gh-pages:production']);
+  grunt.registerTask('deploy-prod', ['sass', 'cssmin', 'gh-pages:production']);
 };

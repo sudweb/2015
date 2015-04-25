@@ -29,6 +29,7 @@
     "MD5": "^1.2.1",
     "grunt": "^0.4.0",
     "grunt-cli": "^0.1.13",
+    "grunt-contrib-cssmin": "^0.12.2",
     "grunt-contrib-watch": "*",
     "grunt-gh-pages": "^0.9.0",
     "grunt-htmlhint": "*",
