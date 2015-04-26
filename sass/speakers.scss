@@ -2,14 +2,11 @@ $avatar-width: 150px;
 
 @mixin avatar {
   border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 .1em .1em rgba(black, .3);
-}  
+}
 
 .speaker {
   &:hover {
-    opacity: 0.9;
-    background: $text-over-inverted;
+
   }
   .avatar {
     text-align: center;
@@ -25,13 +22,19 @@ $avatar-width: 150px;
 }
 
 .speaker-bio {
-
+    color: $body;
+  a {
+    color: $body;
+  }
   &__name {
-    color: $primary;
+    font-family: "Open Sans Condensed", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight:400;
   }
 
   &__biography {
     font-size: 0.9em;
+
   }
 }
 
@@ -60,5 +63,3 @@ $avatar-width: 150px;
     font-size: .9em;
   }
 }
-
-

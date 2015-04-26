@@ -20,7 +20,8 @@
     <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700">
     <link rel="stylesheet" href="css/sudweb.min.css" />
   </head>
   <body id="top" class="accueil">
@@ -28,7 +29,7 @@
       <div class="container">
         <a href="#main-nav" class="skiplink to-nav">Navigation</a>
         <a href="./" class="logo">
-          <img src="img/logo.png" alt="Sud Web 2015 à Montpellier" />
+          <img src="img/logo-sudweb.png" alt="Sud Web 2015 à Montpellier" />
         </a>
         <nav role="navigation" class="nav" id="main-nav">
           <ul>
@@ -47,15 +48,14 @@
       </div>
     </header>
     <section class="main">
-      <h1 class="divider">Demandez le programme !</h1>
-      <div class="columned-content">
+
+      <h1>Demandez le programme !</h1>
+
+      <div class="summary columned-content">
         <article>
-          <h3>Jeudi</h3>
-
+          <h3 class="divider">Jeudi</h3>
           <h4>Trampolean</h4>
-
           <p>Formation itinérante sur LEAN startup organisée par <a href="http://scopyleft.fr">Scopyleft</a>.</p>
-
           <ul class="list-inline list-inline--choices">
             <li><a class="action" href="http://trampolean.fr/pour-sudweb/">Inscription</a></li>
           </ul>
@@ -64,7 +64,7 @@
           <p>La Thym Sud Web, les orateurs et les participants brisent la glace pendant une soirée informelle.</p>
         </article>
         <article>
-          <h3>Vendredi</h3>
+          <h3 class="divider">Vendredi</h3>
           <h4>Les conférences</h4>
           <p>Une journée rythmée par des présentations, un débat et des pauses gourmandes.</p>
           <ul class="list-inline list-inline--choices">
@@ -89,6 +89,7 @@
           </ul>
         </article>
       </div>
+
       <h2 class="divider" id="conferences">Le vendredi : <strong>conférences</strong></h2>
       <div class="callout-discrete">
         <div class="excerpt">
@@ -528,15 +529,7 @@
       </aside>
       <footer role="contentinfo" class="pagefooter">
         <div class="container">
-          <a href="#top" class="skiplink to-top">Haut de page</a>
-          <div class="connect">
-            <h2>Restez en contact</h2>
-            <ul>
-              <li><a href="https://twitter.com/SudWeb" class="twitter">Twitter</a></li>
-              <li><a href="https://facebook.com/SudWeb" class="facebook">Facebook</a></li>
-              <li><a href="http://lanyrd.com/2015/sudweb/" class="lanyrd">Lanyrd</a></li>
-            </ul>
-          </div>
+          <div class="columned-content">
           <div class="precedentes">
             <h2>Les éditions précédentes</h2>
             <ul>
@@ -546,15 +539,23 @@
               <li><a href="http://sudweb.fr/2011">2011 à Nîmes</a></li>
             </ul>
           </div>
-          <nav class="footer">
+          <div class="connect">
+            <h2>Restez en contact</h2>
+            <ul>
+              <li><a href="https://twitter.com/SudWeb" class="twitter">Twitter</a></li>
+              <li><a href="https://facebook.com/SudWeb" class="facebook">Facebook</a></li>
+              <li><a href="http://lanyrd.com/2015/sudweb/" class="lanyrd">Lanyrd</a></li>
+            </ul>
+          </div>
+          <div class="links">
             <ul>
               <li><a href="http://sudweb.fr/blog/category/2015/">Actualité</a></li>
-              <li><a href="http://sudweb.us2.list-manage.com/subscribe?u=af19b58cf514c01eca3f7652e&amp;id=b579f5b507">Newsletter</a></li>
               <li><a href="http://sudweb.fr/blog/contact/">Contact</a></li>
               <li><a href="mentions-legales.html">Mentions légales</a></li>
             </ul>
-          </nav>
-          <p class="colophon">Sud Web est un évènement à but non-lucratif organisé par une équipe de bénévoles passionnés.</p>
+          </div>
+        </div>
+          <p class="colophon center">Sud Web est un évènement à but non-lucratif organisé par une équipe de bénévoles passionnés.</p>
         </div>
       </footer>
       <script>

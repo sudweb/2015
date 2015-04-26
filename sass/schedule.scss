@@ -13,7 +13,6 @@
   margin: 1.5em 0;
 
   &.schedule-slot--break {
-    background-color: $light-gray;
   }
 
   header {
@@ -24,9 +23,8 @@
     .schedule-slot__time,
     .schedule-slot__extra,
     .schedule-slot__title {
-      background-color: $primary;
-      border: 1px solid $primary;
-      color: $text-over-primary;
+      background-color: $text-over-primary;
+      color: $body;
       display: inline-block;
       @include font-size(20);
       padding: 1em;
@@ -43,7 +41,7 @@
     .schedule-slot__extra {
       background-color: transparent;
       border-color: transparent;
-      color: lighten($primary, 10%);
+      color: $body;
     }
   }
 
@@ -77,5 +75,3 @@
     }
   }
 }
-
-

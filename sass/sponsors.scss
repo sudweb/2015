@@ -1,8 +1,8 @@
 .sponsors {
   clear: both;
   padding: 1em;
-  max-width: $widest;
   margin: 0 auto;
+  background-color: $body;
 
   h3 {
     text-align: center;
@@ -15,8 +15,7 @@
       display: block;
       height: 5px;
       width: 25%;
-      border-top: 1px solid;
-      border-bottom: 1px dotted;
+      border-top: 1px solid #999;
       position: absolute;
       top: .62em;
       right: 75%;
@@ -26,15 +25,11 @@
       left: 75%;
     }
   }
-  .or {
-    color: #FEB100;
-  }
-  .argent {
-    color: #979B9D;
-  }
+  .or,
+  .argent,
   .bronze,
   .sponsors__bronze {
-    color: $inverted;
+    color: #999;
   }
   ul {
     list-style: none;

@@ -74,7 +74,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['htmlhint', 'sass', 'cssmin', 'watch']);
+  grunt.registerTask('default', ['htmlhint', 'sass', 'cssmin']);
   grunt.registerTask('deploy', ['deploy-prod']);
   grunt.registerTask('deploy-dev', ['sass', 'gh-pages:dev']);
   grunt.registerTask('deploy-prod', ['sass', 'cssmin', 'gh-pages:production']);
