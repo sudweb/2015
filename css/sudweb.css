@@ -348,11 +348,9 @@ td, th {
   .list-inline li {
     display: inline; }
   .list-inline--choices {
-    line-height: 1.125;
     margin: 0.5em 0;
     text-align: left; }
     .list-inline--choices li:before {
-      content: "•";
       margin: 0 .2em 0 .15em; }
     .list-inline--choices li:first-child:before {
       content: "";
