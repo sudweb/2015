@@ -3,10 +3,23 @@
 var React = require('react');
 var attendees = require('../.attendees.json')
   .filter(function(person, i, arr){
-    return person.name && !arr.slice(i + 1, arr.length).some(function(p){
-      return p.name === person.name;
+    return person.first_name && !arr.slice(i + 1, arr.length).some(function(p){
+      return personName(p) === personName(person);
     });
+  })
+  .sort(function(a, b){
+    return a.date > b.date ? 1 : (a.date < b.date ? -1 : 0);
   });
+
+function personName(person, separator){
+  return person.first_name + (separator || ' ') + person.last_name;
+}
+
+function personInitials(person){
+  return personName(person).split(' ').map(function(word){
+    return word.replace(/^(d|l)'/i, '')[0];
+  }).join('').toLocaleUpperCase();
+}
 
 module.exports = React.createClass({
   getDefaultProps: function(){
@@ -21,19 +34,20 @@ module.exports = React.createClass({
     return this.props.attendees.map(function(person, i){
       return (<li className="column person" key={i}>
         <p className="avatar">
-          <img src={person.gravatar + '&d=http://sudweb.fr/2015/img/you-re-awesome.jpg'} alt=""/>
+	  <img src={person.gravatar + '?s=75&r=g&d=blank'} alt=""/>
+	  <span className="initials">{personInitials(person)}</span>
         </p>
 
-        <h3>{person.twitter ? this.renderTwitterHandle(person) : person.name}</h3>
+	<h3>{person.twitter ? this.renderTwitterHandle(person) : this.renderName(person)}</h3>
       </li>);
     }, this);
   },
 
-  renderTwitterHandle: function (person){
-    if (!person.twitter) {
-      return null;
-    }
+  renderName: function (person) {
+    return (<span>{personName(person)}</span>);
+  },
 
-    return (<a href={'https://twitter.com/' + person.twitter} title={person.name}>@{person.twitter}</a>);
+  renderTwitterHandle: function (person){
+    return (<a href={'https://twitter.com/' + person.twitter} title={personName(person)}>@{person.twitter}</a>);
   }
 });
