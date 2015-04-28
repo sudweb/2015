@@ -33,10 +33,25 @@ $avatar-width: 75px;
     }
 
     .avatar {
+      position: relative;
       text-align: center;
+
+      .initials {
+	color: $primary;
+	left: 0;
+	line-height: $avatar-width;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	z-index: 0;
+      }
+
       img {
         @include avatar;
         max-width: $avatar-width;
+	position: relative;
+	z-index: 10;
       }
     }
 

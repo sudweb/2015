@@ -32,8 +32,10 @@ function paginate(page) {
 
       res.body.participants.forEach(function (attendee) {
         stream.write(JSON.stringify({
-          name:     attendee.owner.first_name + ' ' + attendee.owner.last_name,
-          gravatar: 'https://secure.gravatar.com/avatar/' + md5(attendee.owner.email) + '.jpg?s=75&amp;r=g',
+	  date: attendee.create_date,
+	  first_name: attendee.owner.first_name,
+	  last_name: formatLastName(attendee.owner.last_name),
+	  gravatar: 'https://secure.gravatar.com/avatar/' + md5(attendee.owner.email) + '.jpg',
           twitter:  filterTwitterUsernameFromAnswers(attendee.answers)
         }) + ', ');
       });
@@ -46,6 +48,16 @@ function paginate(page) {
         return paginate(page + 1);
       }
     });
+}
+
+function formatLastName(last_name) {
+  return last_name
+    .toLocaleLowerCase()
+    .split(' ')
+    .map(function(word){
+      return word[0].toLocaleUpperCase() + word.slice(1);
+    })
+    .join(' ');
 }
 
 
