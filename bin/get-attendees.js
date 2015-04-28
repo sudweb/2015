@@ -19,12 +19,13 @@ function paginate(page) {
   request
     .get('https://api.weezevent.com/participants')
     .query({
-      access_token: process.env.ACCESS_TOKEN,
-      api_key:      process.env.API_KEY,
-      'id_event[]': process.env.ID_EVENT,
-      full:         true,
-      max:          maxPerPage,
-      page:         page
+      access_token:   process.env.ACCESS_TOKEN,
+      api_key:        process.env.API_KEY,
+      'id_event[]':   process.env.ID_EVENT,
+      include_unpaid: true,
+      full:           true,
+      max:            maxPerPage,
+      page:           page
     })
     .end(function (err, res) {
       console.log('Receiving page #%d results…', page);
