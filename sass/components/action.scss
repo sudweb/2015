@@ -3,25 +3,23 @@
 .action,
 .action:link,
 .action:visited {
-  border: none;
-  background: $contrast;
-  border-radius: 2px;
-  box-shadow: 1px 1px .1em rgba(black, .2);
-  color: $text-over-contrast;
+  border-radius: 20px ;
+  border: 2px solid $text-over-primary;
+  color: $text-over-primary;
   cursor: pointer;
   display: inline-block;
   padding: .5em 1em;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #444;
+  text-transform: uppercase;
 }
 .action:focus,
 .action:hover {
-  background: darken($contrast, 5%);
+  background: $text-over-primary;
+  color: $primary;
 }
 
 .action-disabled,
 .action-disabled:focus,
 .action-disabled:hover{
-  background: desaturate($primary, 25%);
   cursor: no-drop;
 }

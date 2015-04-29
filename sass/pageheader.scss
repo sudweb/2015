@@ -13,8 +13,8 @@
 }
 
 .pageheader {
-  background: $inverted;
-  color: $text-over-inverted;
+  background: $primary;
+  color: $text-over-primary;
   margin-bottom: 4em;
   text-align: right;
 
@@ -27,6 +27,7 @@
   }
 
   .nav {
+    background: $text-over-primary;
     text-align: left;
     @include respond-to(medium) {
       position: absolute;
@@ -41,6 +42,7 @@
       }
     }
     @include respond-to(wide) {
+      background: $primary;
       text-align: right;
       padding: .5em 0;
       .close {
@@ -51,8 +53,7 @@
     span{
       border: 1px solid transparent;
       text-transform: uppercase;
-      color: $text-over-inverted;
-      background: $inverted;
+      color: $body;
       @include respond-to(wide) {
         display: inline-block;
         vertical-align: top;
@@ -61,19 +62,15 @@
     a:focus,
     a:hover,
     .current,
-    .cta{
-      background: $contrast;
-      border: 1px solid $contrast;
-      border-radius: 2px;
-      color: $text-over-contrast;
+    .action{
+      background: $text-over-primary;
+      border-radius: 20px;
       text-decoration: none;
-
       transition: background .3s ease, color .3s ease;
 
       &:hover,
       &:focus {
-        background: $body;
-        color: darken($contrast, 0.15);
+
       }
     }
     span {
@@ -86,7 +83,6 @@
     }
   }
   .banner {
-    border-top: 2px solid $inverted;
     text-align: center;
     background: $primary;
     color: $text-over-primary;
@@ -98,6 +94,7 @@
   .baseline {
     @include respond-to(wide) {
       @include font-size(25);
+      margin-top: 5rem;
     }
   }
   .description {

@@ -35,8 +35,7 @@
   color: $text-over-inverted;
   margin: 2em 0;
 
-  h2 {
-    background: $secondary;
-    color: $text-over-secondary;
+  h2,a {
+    color: $body;
   }
 }
