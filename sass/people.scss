@@ -12,8 +12,6 @@ $avatar-width: 75px;
   }
   .person {
     &:hover {
-      opacity: 0.9;
-      background: $text-over-inverted;
     }
 
 
@@ -27,8 +25,8 @@ $avatar-width: 75px;
       color: $text;
       text-decoration: none;
 
-      &:hover .link{
-        text-decoration: none;
+      &:hover {
+        text-decoration: underline;
       }
     }
 
@@ -37,14 +35,14 @@ $avatar-width: 75px;
       text-align: center;
 
       .initials {
-	color: $primary;
-	left: 0;
-	line-height: $avatar-width;
-	position: absolute;
-	text-align: center;
-	vertical-align: middle;
-	width: 100%;
-	z-index: 0;
+        color: $primary;
+        left: 0;
+        line-height: $avatar-width;
+        position: absolute;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+        z-index: 0;
       }
 
       img {
