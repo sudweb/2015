@@ -880,17 +880,14 @@ aside.ateliers:before {
   list-style: none; }
 .people .person {
   margin-bottom: 1.5em; }
-  .people .person:hover {
-    opacity: 0.9;
-    background: #f4f2f3; }
   .people .person h3, .people .person h4 {
     text-align: center; }
   .people .person a {
     display: block;
     color: #312529;
     text-decoration: none; }
-    .people .person a:hover .link {
-      text-decoration: none; }
+    .people .person a:hover {
+      text-decoration: underline; }
   .people .person .avatar {
     position: relative;
     text-align: center; }
