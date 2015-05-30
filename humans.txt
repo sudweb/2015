@@ -15,6 +15,12 @@
 	Frank Taillandier (@DirtyF)
 	from Toulouse, France
 
+	Thanh Nguyen (@Thanh)
+	from Lyon, France
+
+	Brice Favre (@briceatwork)
+	from Montpellier, France
+
 /* THANKS * /
 
 	Original Design by Corinne Sanchez (@coc_san)
