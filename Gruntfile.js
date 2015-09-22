@@ -51,6 +51,10 @@ module.exports = function (grunt) {
         }]
       }
     },
+    browserify: {
+      'js/cfp.min.js': 'js/cfp.js',
+      'js/programme.min.js': 'js/programme.js'
+    },
     'gh-pages': {
       'production': {
         src: '<%= deployableFiles %>',
@@ -70,11 +74,15 @@ module.exports = function (grunt) {
       css: {
         files: ['sass/**/*.scss'],
 	tasks: ['sass:dist', 'cssmin']
+      },
+      js: {
+        files: ['js/*.js', '!js/*.min.js'],
+        tasks: ['browserify']
       }
     }
   });
 
-  grunt.registerTask('default', ['htmlhint', 'sass', 'cssmin', 'watch']);
+  grunt.registerTask('default', ['htmlhint', 'sass', 'browserify', 'cssmin', 'watch']);
   grunt.registerTask('deploy', ['deploy-prod']);
   grunt.registerTask('deploy-dev', ['sass', 'gh-pages:dev']);
   grunt.registerTask('deploy-prod', ['sass', 'cssmin', 'gh-pages:production']);
