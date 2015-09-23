@@ -1,4 +1,9 @@
-(function(d, w){
+'use strict';
+
+var mailto = require('mailto');
+var w = require('global');
+var d = window.document;
+
 var mailtoForm = new mailto(document.getElementById('mailto-form'), { preventDefault: false });
 var fields = ['entry.1910784286', 'entry.174408459'];
 
@@ -34,5 +39,4 @@ mailtoForm.onSubmit = function(m){
 
 restoreFields(fields);
 
-w['Cfp'] = mailtoForm;
-})(document, window);
+module.exports = mailtoForm;

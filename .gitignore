@@ -59,7 +59,7 @@ coverage
 # Styles
 .sass-cache
 css
-
+*.min.js
 # node-waf configuration
 .lock-wscript
 
