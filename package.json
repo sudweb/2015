@@ -37,7 +37,7 @@
     "grunt-contrib-watch": "*",
     "grunt-gh-pages": "^0.10.0",
     "grunt-htmlhint": "*",
-    "grunt-sass": "^0.18.1",
+    "grunt-sass": "^1.0.0",
     "http-server": "^0.8.5",
     "matchdep": "^1.0",
     "react": "^0.13.3",
