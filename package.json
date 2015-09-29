@@ -13,6 +13,7 @@
     "get-attendees": "ID_EVENT=92312 ACCESS_TOKEN=$ACCESS_TOKEN API_KEY=$API_KEY node bin/get-attendees.js",
     "build-attendees": "react-inliner --no-reactid gens.template.html -o gens.html",
     "thumbs": "cd img/orateurs && gm mogrify -thumbnail x150 -gravity center -crop 150x150+0+0 -output-directory 150 -colorspace Gray +contrast *.{jpg,png,gif}",
+    "thym": "cd img/thym && gm mogrify -thumbnail x150 -gravity center -crop 150x150+0+0 -output-directory 150 *.{jpg}",
     "deploy-dev": "npm run thumbs && grunt deploy-dev",
     "deploy-prod": "npm run thumbs && grunt deploy-prod"
   },
