@@ -47,6 +47,12 @@
     }
   }
 
+.schedule-slot__video {
+  @include respond-to(narrow) {
+    display: none !important;
+  }
+}
+
   &__description {
     @include flex(1 0 100%);
     padding-top: .5em;
@@ -77,5 +83,3 @@
     }
   }
 }
-
-
