@@ -238,7 +238,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -366,7 +367,7 @@ th {
   color: #feffff;
   cursor: pointer;
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
   text-decoration: none;
   text-shadow: 1px 1px 1px #444; }
 
@@ -391,7 +392,7 @@ th {
     margin: 0.5em 0;
     text-align: left; }
     .list-inline--choices li:before {
-      margin: 0 0.2em 0 0.15em; }
+      margin: 0 .2em 0 .15em; }
     .list-inline--choices li:first-child:before {
       content: "";
       margin: 0; }
@@ -519,7 +520,7 @@ h1, h2, h3, p, ul, ol, li {
 h1 {
   font-size: 24px;
   font-size: 2.4rem;
-  margin: 0 0 0.5em; }
+  margin: 0 0 .5em; }
 
 h2 {
   font-size: 22px;
@@ -595,7 +596,7 @@ section,
 .nav a:link,
 .nav a:visited {
   display: block;
-  padding: 0.75em 0.5em; }
+  padding: .75em .5em; }
 
 .nav a:focus,
 .nav a:hover {
@@ -622,9 +623,8 @@ a:visited {
 
 .to-nav {
   text-align: right;
-  padding: 0.3em 0.6em 0.4em; }
-  .to-nav:link,
-  .to-nav:visited {
+  padding: .3em .6em .4em; }
+  .to-nav:link, .to-nav:visited {
     color: #f4f2f3; }
   .to-nav:hover {
     background: #10b6bf;
@@ -664,8 +664,7 @@ h1,
 .divider {
   position: relative;
   margin: 1em 0; }
-  .divider:before,
-  .divider:after {
+  .divider:before, .divider:after {
     content: "";
     display: block;
     height: 1px;
@@ -674,8 +673,7 @@ h1,
     top: .62em;
     right: 85%; }
     @media only screen and (min-width: 45em) {
-      .divider:before,
-      .divider:after {
+      .divider:before, .divider:after {
         width: 30%;
         right: 69%; } }
   .divider:after {
@@ -786,9 +784,8 @@ aside.ateliers:before {
       border-radius: 2px;
       color: #feffff;
       text-decoration: none;
-      transition: background 0.3s ease, color 0.3s ease; }
-      .pageheader .nav a:focus:hover,
-      .pageheader .nav a:focus:focus,
+      transition: background .3s ease, color .3s ease; }
+      .pageheader .nav a:focus:hover, .pageheader .nav a:focus:focus,
       .pageheader .nav a:hover:hover,
       .pageheader .nav a:hover:focus,
       .pageheader .nav .current:hover,
@@ -885,7 +882,7 @@ aside.ateliers:before {
     color: #fcf1f2; }
 
 .home .home-intro {
-  padding: 5rem 3rem; }
+  padding: 5rem 3rem 0; }
   .home .home-intro h2,
   .home .home-intro .home-intro__title {
     font-size: 27px;
@@ -945,9 +942,7 @@ aside.ateliers:before {
 .speaker-bio__biography {
   font-size: 0.9em; }
 
-.speaker-avatar__image,
-.speaker-avatar__name,
-.speaker-avatar__title {
+.speaker-avatar__image, .speaker-avatar__name, .speaker-avatar__title {
   display: block; }
 
 .speaker-avatar__image {
@@ -1119,8 +1114,7 @@ aside.ateliers:before {
     text-align: center;
     text-transform: uppercase;
     position: relative; }
-    .sponsors h3:before,
-    .sponsors h3:after {
+    .sponsors h3:before, .sponsors h3:after {
       content: "";
       display: block;
       height: 5px;
@@ -1163,7 +1157,7 @@ aside.ateliers:before {
 .salles .ateliers,
 .salles .soirees {
   background: #fff;
-  padding: 0.5em 1em; }
+  padding: .5em 1em; }
   @media only screen and (max-width: 45em) {
     .salles .ateliers,
     .salles .soirees {
