@@ -31,7 +31,7 @@
   "private": true,
   "devDependencies": {
     "MD5": "^1.2.1",
-    "grunt": "^0.4.0",
+    "grunt": "^1.0.1",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-watch": "*",
