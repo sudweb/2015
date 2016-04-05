@@ -1,6 +1,6 @@
 # Sud Web 2015 [![Stories in Ready](https://badge.waffle.io/sudweb/2015.png?label=ready&title=Ready)](https://waffle.io/sudweb/2015) [![Build Status](https://travis-ci.org/sudweb/2015.png?branch=master)](https://travis-ci.org/sudweb/2015)
 
-Source code for [http://sudweb.fr/2015](http://sudweb.fr/2015) event website.
+Source code for [//sudweb.fr/2015](//sudweb.fr/2015) event website.
 
 Just some good old static webpages. We like to KISS.
 
