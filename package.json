@@ -8,7 +8,7 @@
     "url": "https://sudweb.fr/"
   },
   "scripts": {
-    "watch": "npm run thumbs && grunt && http-server -o ",
+    "watch": "npm run thumbs && grunt & http-server -o ",
     "test": "grunt htmlhint",
     "get-attendees": "ID_EVENT=92312 ACCESS_TOKEN=$ACCESS_TOKEN API_KEY=$API_KEY node bin/get-attendees.js",
     "build-attendees": "react-inliner --no-reactid gens.template.html -o gens.html",
@@ -31,17 +31,17 @@
   "private": true,
   "devDependencies": {
     "MD5": "^1.2.1",
-    "grunt": "^0.4.0",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-cssmin": "^0.14.0",
-    "grunt-contrib-watch": "*",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-gh-pages": "^2.0.0",
     "grunt-htmlhint": "*",
     "grunt-sass": "^1.0.0",
-    "http-server": "^0.8.5",
+    "http-server": "^0.9.0",
     "matchdep": "^1.0",
     "react": "^15.3.2",
     "react-inliner": "^1.0.1",
-    "superagent": "^1.1.0"
+    "superagent": "^2.3.0"
   }
 }
