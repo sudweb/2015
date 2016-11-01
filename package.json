@@ -8,7 +8,7 @@
     "url": "https://sudweb.fr/"
   },
   "scripts": {
-    "watch": "npm run thumbs && grunt && http-server -o ",
+    "watch": "npm run thumbs && grunt & http-server -o ",
     "test": "grunt htmlhint",
     "get-attendees": "ID_EVENT=92312 ACCESS_TOKEN=$ACCESS_TOKEN API_KEY=$API_KEY node bin/get-attendees.js",
     "build-attendees": "react-inliner --no-reactid gens.template.html -o gens.html",
