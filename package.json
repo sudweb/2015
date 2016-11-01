@@ -34,7 +34,7 @@
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-cssmin": "^1.0.1",
-    "grunt-contrib-watch": "*",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-gh-pages": "^2.0.0",
     "grunt-htmlhint": "*",
     "grunt-sass": "^1.0.0",
